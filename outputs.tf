@@ -92,3 +92,8 @@ output "vpc_endpoint_dynamodb_id" {
   description = "The ID of VPC endpoint for DynamoDB"
   value       = "${aws_vpc_endpoint.dynamodb.id}"
 }
+
+output "db_subnet_group_id" {
+  description = "The ID of DB subnet group"
+  value       = "${aws_db_subnet_group.database.id}"
+}
